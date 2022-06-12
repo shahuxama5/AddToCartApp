@@ -1,0 +1,16 @@
+<header>
+  <div class="navbar navbar-dark bg-primary shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">
+      <i class="fas fa-shipping-fast" style="font-size: 35px;"></i>
+      <strong style="font-size: 25px;">UxmCart</strong>
+      <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search products">
+      </div>
+      <span class="fas fa-search search-icon"></span>
+    </div>
+    <button class="btn btn-primary" routerLink="/cart">
+      <i class="fas fa-cart-plus" style="font-size: 25px;"></i>
+      <div class="badge bg-danger" style="font-size: 10px;">{{ totalItem }}</div>
+    </button>
+  </div>
+</header>
